@@ -1,9 +1,9 @@
-import { FaXTwitter , FaLinkedin, FaGithub} from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 const socialLinks = [
-  { icon: FaGithub, href: "#", label: "GitHub" },
-  { icon: FaLinkedin, href: "#", label: "LinkedIn" },
-  { icon: FaXTwitter, href: "#", label: "Twitter" },
+  { icon: FaGithub, href: "https://github.com/popprash" },
+  { icon: FaLinkedin, href: "https://x.com/PChhetry68179" },
+  { icon: FaXTwitter, href: "https://www.linkedin.com/in/prashdeveloperurl/" }
 ];
 
 const footerLinks = [

@@ -1,7 +1,6 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, ChevronDown, Download } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { useEffect, useState } from "react";
 
 const skills = [
@@ -109,14 +108,6 @@ export const Hero = () => {
               >
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton
-                onClick={() => {
-                  window.open('/Prashant_Chhetry_Resume.pdf', '_blank', 'noopener,noreferrer');
-                }}
-              >
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
@@ -167,9 +158,9 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">2+</div>
+                  <div className="text-2xl font-bold text-primary">15+</div>
                   <div className="text-xs text-muted-foreground">
-                    years exp
+                    Projects
                   </div>
                 </div>
               </div>

@@ -110,19 +110,19 @@ const technologies = [
 
 export const TechStack = () => {
   return (
-    <section id="tech_stack" className="py-32 relative overflow-hidden">
+    <section id="tech_stack" className="py-16 md:py-32 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-175 h-175 rounded-full bg-primary/5 blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-20">
           <span className="text-primary uppercase tracking-[0.3em] text-sm">
             Tech Stack
           </span>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4">
             Technologies I
             <span className="font-serif italic text-white">
               {" "}
@@ -136,27 +136,27 @@ export const TechStack = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8">
           {technologies.map((tech, index) => {
             const Icon = tech.icon;
 
             return (
               <div
                 key={tech.name}
-                className="group glass rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 hover:glow-border animate-fade-in"
+                className="group glass rounded-3xl p-3 sm:p-5 lg:p-8 transition-all duration-500 hover:-translate-y-3 hover:glow-border animate-fade-in"
                 style={{
                   animationDelay: `${index * 80}ms`,
                 }}
               >
                 <div
                   className="
-                    w-20 h-20
-                    rounded-2xl
+                    w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20
+                    rounded-xl sm:rounded-2xl
                     bg-primary/10
                     flex
                     items-center
                     justify-center
-                    mb-6
+                    mb-3 sm:mb-4 lg:mb-6
                     transition-all
                     duration-500
                     group-hover:scale-110
@@ -164,14 +164,14 @@ export const TechStack = () => {
                     animate-float
                   "
                 >
-                  <Icon className="text-5xl text-primary" />
+                  <Icon className="text-3xl sm:text-4xl lg:text-5xl text-primary" />
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-sm sm:text-lg lg:text-2xl font-semibold mb-1 sm:mb-2 lg:mb-3 group-hover:text-primary transition-colors">
                   {tech.name}
                 </h3>
 
-                <p className="text-muted-foreground leading-7 text-sm">
+                <p className="text-muted-foreground leading-5 sm:leading-6 lg:leading-7 text-xs sm:text-sm">
                   {tech.description}
                 </p>
               </div>
