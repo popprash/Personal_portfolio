@@ -3,35 +3,45 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { FaGithub } from "react-icons/fa6";
 const projects = [
   {
+    title: "Squawk",
+    description:
+      "A modern real-time chat application with secure authentication, instant messaging, and a responsive user interface. Built with a scalable full-stack architecture to deliver fast, seamless conversations across devices.",
+    image: "/projects/project3.png",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "Clerk",
+      "Tailwind CSS",
+    ],
+    link: "https://squawk-nzjb.onrender.com",
+    github: "https://github.com/popprash/squawk",
+  },
+  {
     title: "Netflix Clone",
-  description:
-    "A full-stack Netflix-inspired streaming platform featuring secure authentication, dynamic movie browsing, personalized watchlists, and responsive UI powered by the TMDB API.",
-  image: "/projects/project6.png",
-  tags: [
-    "React",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "TMDB API",
-    "JWT",
-    "Tailwind CSS",
-  ],
-  link: "https://netflix-clone-198v.onrender.com",
-  github: "https://github.com/popprash/netflix_clone"
+    description:
+      "A full-stack Netflix-inspired streaming platform featuring secure authentication, dynamic movie browsing, personalized watchlists, and responsive UI powered by the TMDB API.",
+    image: "/projects/project6.png",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TMDB API",
+      "JWT",
+      "Tailwind CSS",
+    ],
+    link: "https://netflix-clone-198v.onrender.com",
+    github: "https://github.com/popprash/netflix_clone",
   },
   {
     title: "X Clone",
     description:
       "A full-stack social media platform inspired by X (formerly Twitter), featuring user authentication, post creation, likes, comments, profiles, and a responsive interface for seamless social interactions.",
     image: "/projects/project1.png",
-    tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Tailwind CSS",
-    ],
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS"],
     link: "https://twitter-clone-2sfc.onrender.com",
     github: "https://github.com/popprash/twitter_clone",
   },
@@ -40,13 +50,7 @@ const projects = [
     description:
       "A modern movie discovery application powered by the TMDB API. Built a custom trending section using Appwrite by tracking user searches and surfacing the most popular movies in real time.",
     image: "/projects/project2.png",
-    tags: [
-      "React",
-      "Appwrite",
-      "TMDB API",
-      "Tailwind CSS",
-      "Vite",
-    ],
+    tags: ["React", "Appwrite", "TMDB API", "Tailwind CSS", "Vite"],
     link: "https://movie-application-ecru.vercel.app/",
     github: "https://github.com/popprash/Movie_application",
   },
@@ -55,12 +59,7 @@ const projects = [
     description:
       "A Next.js platform that helps developers discover upcoming technology conferences, hackathons, and community events, with event details and seamless slot booking.",
     image: "/projects/project3.png",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB",
-    ],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
     link: "https://dev-events-nextjs16-2-9.vercel.app/",
     github: "https://github.com/popprash/dev_events_nextjs16.2.9",
   },
@@ -69,14 +68,7 @@ const projects = [
     description:
       "An AI-powered conversational assistant built with LangGraph and LangSmith, using the Groq API for fast inference. Supports multi-step reasoning with observable agent workflows.",
     image: "/projects/project4.png",
-    tags: [
-      "LangGraph",
-      "LangSmith",
-      "Groq",
-      "Python",
-      "Streamlit",
-      "Rag"
-    ],
+    tags: ["LangGraph", "LangSmith", "Groq", "Python", "Streamlit", "Rag"],
     link: "https://chatbot-prashant.streamlit.app/",
     github: "https://github.com/popprash/chatbot_using_langgraph",
   },
@@ -85,13 +77,7 @@ const projects = [
     description:
       "A full-stack MERN application for managing products with complete CRUD functionality, responsive UI, REST APIs, and persistent MongoDB storage.",
     image: "/projects/project5.png",
-    tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     link: "https://product-store-gray-ten.vercel.app/",
     github: "https://github.com/popprash/Product_Store",
   },
