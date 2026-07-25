@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { useEffect, useState } from "react";
@@ -108,6 +109,16 @@ export const Hero = () => {
               >
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
+              <AnimatedBorderButton
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/PC_Resume.pdf';
+                  link.download = 'PC_Resume.pdf';
+                  link.click();
+                }}
+              >
+                Download CV
+              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
