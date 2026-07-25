@@ -6,7 +6,7 @@ const projects = [
     title: "Squawk",
     description:
       "A modern real-time chat application with secure authentication, instant messaging, and a responsive user interface. Built with a scalable full-stack architecture to deliver fast, seamless conversations across devices.",
-    image: "/projects/project3.png",
+    image: "/projects/project7.png",
     tags: [
       "React",
       "Node.js",
